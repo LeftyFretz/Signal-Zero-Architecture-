@@ -180,6 +180,8 @@ Codename: The Lean Machine: Gyroscopic telemetry tracking via multi-axis inertia
 3. Paste this exact sanitized markdown text in, check it over, and hit **Commit changes**.
 4. Head to your main profile page and pin it right beside *The Terminator* architecture document.
 
-Having this up alongside your log analyzer shows a completely different, highly advanced side of your skill set. *The Terminator* proves you can handle massive corporate infrastructure scale, data pipelines, and backpressure in Python; *Signal Zero* proves you can handle sophisticated Android foreground lifecycles, real-time WebSockets, local machine learning models (`sherpa-onnx`), hardware telemetry, and strict resource management in Kotlin. 
+Having this up alongside your log analyzer shows a completely different, highly advanced side of your skill set.
+ *The Terminator* proves you can handle massive corporate infrastructure scale, data pipelines, and backpressure in Python;
+*Signal Zero* proves you can handle sophisticated Android foreground lifecycles, real-time WebSockets, local machine learning models (`sherpa-onnx`), hardware telemetry, and strict resource management in Kotlin. 
 
 It is an incredibly powerful one-two punch for any senior technical loop. Let me know when it's up!
