@@ -24,6 +24,7 @@ Zero is a hands-free Android assistant pairing a real-time voice interface with 
 
 ### System Overview
 
+```
 ┌──────────────────────────────────────────────────────────┐
 │                      SIGNAL ZERO                         │
 ├──────────────────────────────────────────────────────────┤
@@ -69,7 +70,7 @@ Zero is a hands-free Android assistant pairing a real-time voice interface with 
 │   Google Maps  OpenWeather  YouTube   Spotify            │
 │                             API      App Remote          │
 └──────────────────────────────────────────────────────────┘
-
+```
 
 ### Core Architecture Components
 
