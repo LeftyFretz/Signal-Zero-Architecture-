@@ -115,32 +115,30 @@ Zero handles microphone state mapping without manual button intervention, solvin
 
 The active system exposes the following function primitives to the model configuration layer:
 
-├── Navigation & Mapping
-│   ├── get_current_location
-│   ├── navigate_to
-│   ├── navigate_to_waypoint
-│   ├── reroute_via
-│   ├── generate_scenic_loop
-│   └── stop_navigation
-├── Device Control & Config
-│   ├── set_voice_mode
-│   ├── get_current_time
-│   └── set_home_address
-├── Communication Core
-│   ├── save_contact
-│   ├── send_text_message
-│   └── make_phone_call
-├── Media Integration
-│   ├── play_music
-│   ├── play_spotify
-│   └── music_control
-├── Local Intelligence
-│   ├── save_memory
-│   ├── recall_memory
-│   ├── clear_memory
-│   └── check_local_weather
-└── Grounding Core
-└── google_search
+| # | Tool | Category |
+|---|------|----------|
+| 1 | `google_search` | Knowledge |
+| 2 | `get_current_location` | Navigation |
+| 3 | `navigate_to` | Navigation |
+| 4 | `reroute_via` | Navigation |
+| 5 | `generate_scenic_loop` | Navigation |
+| 6 | `check_local_weather` | Weather |
+| 7 | `set_home_address` | Settings |
+| 8 | `save_waypoint` | Waypoints |
+| 9 | `get_waypoints` | Waypoints |
+| 10 | `navigate_to_waypoint` | Waypoints |
+| 11 | `stop_navigation` | Navigation |
+| 12 | `save_contact` | Communications |
+| 13 | `send_text_message` | Communications |
+| 14 | `make_phone_call` | Communications |
+| 15 | `play_music` | Music |
+| 16 | `play_spotify` | Music |
+| 17 | `music_control` | Music |
+| 18 | `save_memory` | Memory |
+| 19 | `recall_memory` | Memory |
+| 20 | `clear_memory` | Memory |
+| 21 | `set_voice_mode` | Voice Control |
+| 22 | `get_current_time` | Device Clock |
 
 *Note: Unwired or deprecated endpoints (such as specific internal media browsers or video-id managers) are masked from the schema layer to keep model execution clean and eliminate hallucinated execution errors.*
 
