@@ -54,7 +54,7 @@ Zero is a hands-free Android assistant pairing a real-time voice interface with 
 │  │                                                  │    │
 │  │  ┌──────────────────────────────────────────┐    │    │
 │  │  │         ResourceWatchdog                 │    │    │
-│  │  │  ACTIVE → SOFT_IDLE → HARD_IDLE (30s)   │    │    │
+│  │  │  ACTIVE → SOFT_IDLE → HARD_IDLE (30s)    │    │    │
 │  │  │  GPS · Mapbox · WebSocket · GeminiLive   │    │    │
 │  │  │  RIDING thresholds / PARKED override     │    │    │
 │  │  │  Paused by STANDBY/OFF power modes       │    │    │
