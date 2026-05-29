@@ -142,6 +142,58 @@ The active system exposes the following function primitives to the model configu
 
 *Note: Unwired or deprecated endpoints (such as specific internal media browsers or video-id managers) are masked from the schema layer to keep model execution clean and eliminate hallucinated execution errors.*
 
+### 🗺️ Map Controls & Free Drive
+
+Signal Zero's map isn't just for active routing. It works as a passive co-pilot too.
+
+| Feature | What it does |
+|---------|--------------|
+| **Free Drive** | Open the map *without* a destination. Zero tracks your location, speed, and bearing in real-time. |
+| **Back Button (Arrow)** | Minimizes the map to return to the "Zero" voice screen **without cancelling your route**. |
+| **Recenter Button** | Instantly snaps the camera back to your current location if you've panned away. |
+| **End Nav (X)** | Cancels the current route and stops navigation. |
+| **Compass Rose** | Appears when a loop route is active. Tap any direction to shift the loop that way. |
+
+### 🧭 Compass Rose — Loop Direction Control
+
+When you generate a loop route, a compass rose appears in the bottom-left corner of the map:
+
+```
+        [N]
+    [NW]   [NE]
+  [W]  [⟳]  [E]
+    [SW]   [SE]
+        [S]
+```
+
+| Button | Action |
+|--------|--------|
+| **N, NE, E, SE, S, SW, W, NW** | Regenerates the loop pointing in that compass direction |
+| **⟳ (Center)** | Rotates the current loop by 45° clockwise |
+
+**How it works:**
+- Tap a direction button → Zero regenerates the loop with the same distance, but oriented toward that compass heading
+- The current direction is highlighted in blue
+- The compass rose only appears for loop routes (not point-to-point navigation)
+- Shifting preserves your original preferences (highway avoidance, loop distance)
+
+**Use case:** Ask Zero for a 20-mile loop, then use the compass rose to explore different directions without speaking. Perfect for finding the best route when you're not sure which way to go.
+
+**Map Style:** Mapbox Standard — 3D buildings, real-world landmark icons, and dynamic shadow rendering.
+
+**Time-of-Day Theming:** The map automatically sets its lighting preset when it opens:
+
+| Time | Preset | Look |
+|------|--------|------|
+| 5–6am | `dawn` | Warm golden light, long soft shadows |
+| 7am–6pm | `day` | Standard bright daylight |
+| 7–8pm | `dusk` | Orange and purple tones |
+| 9pm–4am | `night` | Dark, low-contrast — easy on the eyes at speed |
+
+**Pro Tip:** You can toggle between the Map and the Voice screen anytime.
+> *"Signal Zero, show me the map"* → Opens Map
+> *Tap Back Arrow* → Returns to Voice Screen (Route continues in background)
+
 ---
 
 ## 6. Permissions & Environment Configurations
@@ -174,14 +226,4 @@ Codename: The Lean Machine: Gyroscopic telemetry tracking via multi-axis inertia
 
 ***
 
-### 🛠️ Next Steps For Your New Public Repository:
-1. Open up your new public `signal-zero-docs` or `signal-zero-spec` repository.
-2. Click the **pencil icon** on your blank `README.md`.
-3. Paste this exact sanitized markdown text in, check it over, and hit **Commit changes**.
-4. Head to your main profile page and pin it right beside *The Terminator* architecture document.
 
-Having this up alongside your log analyzer shows a completely different, highly advanced side of your skill set.
- *The Terminator* proves you can handle massive corporate infrastructure scale, data pipelines, and backpressure in Python;
-*Signal Zero* proves you can handle sophisticated Android foreground lifecycles, real-time WebSockets, local machine learning models (`sherpa-onnx`), hardware telemetry, and strict resource management in Kotlin. 
-
-It is an incredibly powerful one-two punch for any senior technical loop. Let me know when it's up!
